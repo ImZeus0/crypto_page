@@ -22,7 +22,7 @@ def get_price(urls):
 		response = requests.get(url)
 		todos = json.loads(response.text)
 		name = url[40:-3]
-		res += "{\"name\":\""+name +"\",\"price\":"+ str(todos[0])+"}"
+		res += "{\"name\":\""+name +"\",\"price\":"+ str(todos[0])+",\"difference\":"+str(todos[6])+"}"
 		if url != 'https://api-pub.bitfinex.com/v2/ticker/tXTZUSD':
 			res += ','
 	res += "]}\'"
