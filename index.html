@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src = "data.txt"></script>
+	<meta http-equiv="Refresh" content="30" />
+</head>
+<body>
+	<section class="header">
+		<div class="conteiner">
+			<div class="titl">
+				<h1>Crypto news</h1>
+				<div class="under_head">Курси обміну криптовалюта онлайн</div>
+			</div>
+		<div class="tables">
+			<script  type="text/javascript">
+				var data = stroke;
+				var obj = JSON.parse(data);
+				document.write ('<table class="table col-md-5">');
+				ii = 0;
+				
+				for (i=0; i<11; i++) {
+					document.writeln("<tr>");
+					
+					for (j=0; j<2; j++){
+						if(i == 0 && j==0){
+							document.write("<td bgcolor=\"black\">" + "НАЗВА ВАЛЮТИ" + "<\/td>");
+						}
+						
+						else if(i == 0 && j==1){
+							document.write("<td bgcolor=\"black\">" + "ЦІНА (USD)" + "<\/td>");
+						}
+						else{
+							if(j==0){
+								document.write("<td bgcolor=\"black\">" + obj.info[i-1].name + "<\/td>");
+							}
+							if(j==1){
+								document.write("<td bgcolor=\"black\">" + obj.info[i-1].price + "<\/td>");
+							}
+							
+						}
+						
+					} 
+						document.writeln("<\/tr>");
+				}
+				document.write ("<\/table> ");
+			</script>
+		</div>
+		</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+stroke = '{"info":[{"name":"BTC","price":6673.2},{"name":"ETH","price":136.91},{"name":"XRP","price":0.17621},{"name":"ZEC","price":31.49},{"name":"NEO","price":6.8483},{"name":"BSV","price":169.43},{"name":"LTC","price":39.409},{"name":"EOS","price":2.2829},{"name":"XMR","price":49.062},{"name":"XTZ","price":1.6914}]}'
